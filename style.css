@@ -1,0 +1,99 @@
+* {
+  font-family: "Funnel Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+  background-color: #f4f4ef;
+}
+
+nav {
+  padding: 2rem;
+}
+
+hr {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: hotpink;
+  text-decoration-style: wavy;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 8rem;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+
+  @media only screen and (min-width: 966px) {
+    /* For desktop: */
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
+
+.bio {
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  @media only screen and (min-width: 768px) {
+    max-width: 700px;
+  }
+}
+
+button {
+  background-color: black;
+  color: rgb(245, 240, 240);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 2px solid hotpink;
+  outline-offset: 4px;
+}
+
+button:hover {
+  background-color: hotpink;
+  color: black;
+}
